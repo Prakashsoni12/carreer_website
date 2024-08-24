@@ -50,6 +50,12 @@
 
          <h2>open positions</h2>
         <p class="text-center">TODO- Show all jobs here</p>
+        <div>
+         {% for job in jobs %}
+          {% include 'jobitem.html' %}
+          {% endfor %}
+        </div>
+        
         </div>
 
       <div class="text-center"">
